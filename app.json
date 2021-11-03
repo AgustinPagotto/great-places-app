@@ -9,11 +9,11 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/places.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/original.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#171717"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -22,7 +22,22 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.holo.lugares",
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.holo.lugares_bonitos",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/places-adaptive.png",
+        "backgroundColor": "#171717" 
+      },
+      "permissions": ["ACCESS_FINE_LOCATION","CAMERA","WRITE_EXTERNAL_STORAGE"],
+      "config" :{
+        "googleMaps": {
+          "apiKey": "AIzaSyApCJ8htoddBup6Z5stjNv4FlGL5cQpjPg"
+        }
+      }
     }
   }
 }
